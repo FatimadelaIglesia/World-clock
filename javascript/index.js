@@ -40,8 +40,9 @@ function updateCity(event) {
   </div>
   `;
 }
+
 updateTime();
 setInterval(updateTime, 1000);
 
-let citySelect = document.querySelector("#city");
-citySelectElement.addEventListener("change", updateCity);
+let citiesSelectElement = document.querySelector("#city");
+citiesSelectElement.addEventListener("change", updateCity);
