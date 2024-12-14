@@ -16,9 +16,9 @@ function updateTime() {
     let sydneyDateElement = sydneyElement.querySelector(".date");
     let sydneyTimeElement = sydneyElement.querySelector(".time");
     let sydneyTime = moment().tz("Australia/Sydney");
-    sydneyDateElement.innerHTML = sydneyTime.format("MMMM, Do, YYYY");
+    sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
     sydneyTimeElement.innerHTML = sydneyTime.format(
-      "h:mm:ss: SSS[<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
@@ -41,7 +41,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
-  <a href="index.html">All cities</a>
+  <a href="/">All cities</a>
   `;
 }
 
